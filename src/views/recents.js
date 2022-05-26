@@ -92,7 +92,7 @@ function Recents() {
     index: "",
   });
 
-  const [recents, setRecents] = useStorage("#recent$calc");
+  const [recents, setRecents] = useStorage("#recent$calc", []);
   const navigate = useNavigate();
 
   const handleAnchor = (e, idx) => {
