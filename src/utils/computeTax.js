@@ -13,6 +13,7 @@ const findThreshold = (value) => {
 const findTax = (amount, limit) => {
   const discount = findThreshold(limit);
 
+  /** FIXME:  I suggest we do not hard code the e-levy rate */
   let tax = Number((1.5 / 100) * Number(amount)).toFixed(2);
 
   if (discount) {
@@ -37,6 +38,7 @@ const findTransferRate = (telco, amount) => {
   switch (telco) {
     case "AirtelTigo Money":
     case "MTN Mobile Money":
+      /**TODO: What are we doing here? */
       if (amount > 1000) {
         charges = Number(7.5).toFixed(2);
       } else if (amount > 50) {
