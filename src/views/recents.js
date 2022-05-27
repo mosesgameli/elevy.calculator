@@ -13,11 +13,12 @@ import {
 import { MoreVert } from "@mui/icons-material";
 import { useLocation, useNavigate } from "react-router-dom";
 
-import { useStorage } from "hooks";
-import { Span } from "material";
-import { withLayout } from "widgets";
 import { useState } from "react";
+import { Span } from "material";
+import { useStorage } from "hooks";
+import { withLayout } from "widgets";
 
+// TODO: refractor numeric values to be properly formated
 function Detailed() {
   const location = useLocation();
   const navigate = useNavigate();

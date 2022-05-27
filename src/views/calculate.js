@@ -133,11 +133,7 @@ function CalculateLevy() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <Button
-                      disabled={index === 0}
-                      onClick={handleBack}
-                      sx={{ mt: 1, mr: 1 }}
-                    >
+                    <Button onClick={handleBack} sx={{ mt: 1, mr: 1 }}>
                       Back
                     </Button>
                     <Button

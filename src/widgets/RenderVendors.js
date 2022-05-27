@@ -3,8 +3,8 @@ import { Image } from "material";
 
 function RenderVendors({ select, handleSelect }) {
   const vendors = [
-    { name: "AirtelTigo Money", img: "airteltigo.jpeg" },
-    { name: "MTN Mobile Money", img: "mtn.jpeg" },
+    { name: "AirtelTigo Money", img: "airteltigo.png" },
+    { name: "MTN Mobile Money", img: "mtn.png" },
     { name: "Vodafone Cash", img: "vodafone.png" },
   ];
 
